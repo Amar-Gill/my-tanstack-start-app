@@ -20,7 +20,10 @@
           "pattern": "dev.gill.coffee",
           "custom_domain": true
         }
-      ]
+      ],
+      "vars": {
+        "VITE_APP_NAME": "My Tanstack Start App Development"
+      }
     },
     "staging": {
       "routes": [
@@ -28,7 +31,10 @@
           "pattern": "staging.gill.coffee",
           "custom_domain": true
         }
-      ]
+      ],
+      "vars": {
+        "VITE_APP_NAME": "My Tanstack Start App Staging"
+      }
     },
     "production": {
       "routes": [
@@ -36,7 +42,10 @@
           "pattern": "prod.gill.coffee",
           "custom_domain": true
         }
-      ]
+      ],
+      "vars": {
+        "VITE_APP_NAME": "My Tanstack Start App Production"
+      }
     }
   },
 	/**
