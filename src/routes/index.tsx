@@ -11,6 +11,8 @@ import {
 export const Route = createFileRoute('/')({ component: App })
 
 function App() {
+  const appName = import.meta.env.VITE_APP_NAME;
+
   const features = [
     {
       icon: <Zap className="w-12 h-12 text-cyan-400" />,
@@ -67,6 +69,11 @@ function App() {
                 START
               </span>
             </h1>
+          </div>
+          <div>
+            <h2 className="text-4xl md:text-5xl font-black text-white [letter-spacing:-0.08em]">
+              {appName}
+            </h2>
           </div>
           <p className="text-2xl md:text-3xl text-gray-300 mb-4 font-light">
             The framework for next generation AI applications
